@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en" class="projects-page-html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Works &amp; Projects Archive — Abhi Thakur</title>
+  <meta name="description" content="Explore selected mobile architectures, real-time spatial systems, deterministic AI frameworks, and full-stack software engineered by Abhi Thakur.">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/projects.css">
+</head>
+<body class="projects-page">
+
+  <!-- Atmospheric Dark Background with Radiant Warm Orange-Red Ambient Glows -->
+  <div class="projects-bg-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="glow-orb glow-orb-4"></div>
+    <div class="glow-orb glow-orb-5"></div>
+    <div class="glow-orb glow-orb-6"></div>
+  </div>
+  <div class="projects-grid-pattern" aria-hidden="true"></div>
+
+  <!-- Page Content Wrapper -->
+  <div class="projects-wrapper">
+
+    <!-- Sticky Glass Top Navigation Bar -->
+    <header class="projects-header-nav">
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">Abhi Thakur</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html#about" class="nav-link">Builds</a>
+          <a href="projects.html" class="nav-link active">Projects Archive</a>
+        </div>
+        <a href="mailto:therealthakur.10@gmail.com" class="btn-pill btn-nav">
+          <span>Let's Build</span>
+          <div class="btn-icon-circle">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.33337 8H12.6667M12.6667 8L8.00004 3.33333M12.6667 8L8.00004 12.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+      </nav>
+    </header>
+
+    <!-- ====================================================
+         SECTION 1: HERO / PAGE HEADER (Title & Subtext regarding this page)
+         ==================================================== -->
+    <!-- ====================================================
+         SECTION 1: HERO / PAGE HEADER (Title & Subtext regarding this page)
+         ==================================================== -->
+    <section class="projects-hero-section" id="hero">
+      <div class="projects-hero-inner">
+        
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>SYSTEMS ARCHITECT &bull; PRODUCTION BUILDS ARCHIVE</span>
+        </div>
+
+        <h1 class="projects-hero-title">
+          Engineered for High Concurrency.<br>
+          <span class="title-accent">Built for Zero Latency &amp; AI Precision.</span>
+        </h1>
+
+        <p class="projects-hero-subtext">
+          Full-Stack Software Engineer &amp; Systems Developer specializing in cross-platform mobile architecture (Flutter), modern web microservices (React, Node.js), multimodal AI vision pipelines, and cryptographic server-to-server attribution.
+        </p>
+
+        <!-- Resume & Direct Action Bar -->
+        <div class="projects-resume-bar" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin: 28px 0 36px 0; flex-wrap: wrap;">
+          <a href="resume.html" target="_blank" rel="noopener" class="btn-pill" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #ffffff; padding: 10px 22px; font-size: 13px; font-weight: 700; border-radius: 9999px; display: inline-flex; align-items: center; gap: 10px; transition: all 0.25s ease;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>View Full Resume (PDF)</span>
+          </a>
+          <a href="mailto:therealthakur.10@gmail.com" class="btn-pill" style="background: rgba(242, 91, 48, 0.15); border: 1px solid rgba(242, 91, 48, 0.45); color: #ff6e47; padding: 10px 22px; font-size: 13px; font-weight: 700; border-radius: 9999px; display: inline-flex; align-items: center; gap: 10px; transition: all 0.25s ease;">
+            <span>Contact Abhi (+91 7719768898)</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+
+        <!-- Category Filter Tabs & Project Counters -->
+        <div class="projects-controls-bar">
+          <div class="filter-tabs-group" role="tablist">
+            <button class="filter-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Builds (06)</button>
+            <button class="filter-tab-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile (Flutter)</button>
+            <button class="filter-tab-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Vision</button>
+            <button class="filter-tab-btn" data-filter="web" role="tab" aria-selected="false">Full-Stack &amp; Web</button>
+            <button class="filter-tab-btn" data-filter="backend" role="tab" aria-selected="false">Microservices &amp; Algorithms</button>
+          </div>
+
+          <div class="projects-meta-counters">
+            <div class="meta-counter-item">
+              <span class="meta-counter-dot"></span>
+              <span><strong class="meta-counter-num">06</strong> Systems</span>
+            </div>
+            <div class="meta-counter-item">
+              <span class="meta-counter-dot"></span>
+              <span><strong class="meta-counter-num">99.8%</strong> Sync</span>
+            </div>
+            <div class="meta-counter-item">
+              <span class="meta-counter-dot"></span>
+              <span><strong class="meta-counter-num">100+</strong> DSA Solves</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 2: ALL PROJECTS SHOWCASE GRID (Interactive Cards)
+         ==================================================== -->
+    <section class="projects-grid-section" id="showcase">
+      <div class="projects-masonry-grid" id="projects-grid">
+
+        <!-- Project 1: Carpool Mobility App -->
+        <article class="project-card" data-category="mobile backend" data-project="carpool">
+          <div class="project-card-shade" aria-hidden="true"></div>
+          <div class="project-card-media">
+            <img src="public/assets/images/carpool-project.jpg?v=2026.3" alt="Carpool — Dynamic Mobility &amp; Ridesharing Platform" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badges">
+              <span class="project-category-pill">Flutter &bull; Firebase &bull; Maps SDK</span>
+              <span class="project-year-pill">2026</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top-info">
+              <span class="project-client-name">Full-Stack Mobile Architecture</span>
+              <h2 class="project-card-title">Carpool — Peer-to-Peer Mobility &amp; Dynamic Ridesharing Platform</h2>
+              <p class="project-card-desc">
+                Spatial route-matching engine using Google Maps Polyline APIs with concurrent seat allocation state machines, optimistic UI updates, and sub-second GPS tracking.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-impact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                <span>Sub-Second GPS &amp; Polyline Routing</span>
+              </div>
+              <span class="project-card-cta">
+                <span>Explore Technical Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Shivra Workout HealthTech -->
+        <article class="project-card" data-category="mobile ai" data-project="shivra">
+          <div class="project-card-shade" aria-hidden="true"></div>
+          <div class="project-card-media">
+            <img src="public/assets/images/shivra-project.jpg?v=2026.3" alt="Shivra Workout — AI Fitness &amp; Telehealth Ecosystem" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badges">
+              <span class="project-category-pill">Flutter &bull; OpenRouter AI &bull; BLE</span>
+              <span class="project-year-pill">2026</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top-info">
+              <span class="project-client-name">HealthTech &bull; Multimodal AI</span>
+              <h2 class="project-card-title">Shivra Workout — Full-Stack AI Fitness &amp; Telehealth Ecosystem</h2>
+              <p class="project-card-desc">
+                Automated meal-scanning engine using OpenRouter vision models querying USDA FoodData Central in 1.8s, coupled with BLE sensor telemetry and local Hive offline caching.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-impact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>&lt;1.8s Vision AI Nutritional Logging</span>
+              </div>
+              <span class="project-card-cta">
+                <span>Explore Technical Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Universal UI Skills -->
+        <article class="project-card" data-category="ai web" data-project="universal-ui">
+          <div class="project-card-shade" aria-hidden="true"></div>
+          <div class="project-card-media">
+            <img src="public/assets/images/universal-ui-project.jpg?v=2026.3" alt="Universal UI Skills — Open Source AI Framework" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badges">
+              <span class="project-category-pill">LLM Prompt Architecture &bull; Tokens</span>
+              <span class="project-year-pill">2026</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top-info">
+              <span class="project-client-name">Open-Source Framework</span>
+              <h2 class="project-card-title">Universal UI Skills — Open-Source AI Design System Framework</h2>
+              <p class="project-card-desc">
+                Design constraint framework and system prompt recipes forcing agentic LLMs (Cursor, Claude, Copilot) to produce clean-code UI layouts with strict semantic hierarchies.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-impact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                <span>30+ Repos &bull; Deterministic AI Tokens</span>
+              </div>
+              <span class="project-card-cta">
+                <span>Explore Technical Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Mailofly Production Microservices -->
+        <article class="project-card" data-category="web backend" data-project="mailofly">
+          <div class="project-card-shade" aria-hidden="true"></div>
+          <div class="project-card-media">
+            <img src="public/assets/images/mailofly-project.jpg?v=2026.3" alt="Mailofly Production Web Architecture" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badges">
+              <span class="project-category-pill">React.js &bull; Node.js &bull; S2S Webhooks</span>
+              <span class="project-year-pill">2026 — Present</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top-info">
+              <span class="project-client-name">Mailofly Core Team</span>
+              <h2 class="project-card-title">Mailofly — Production Web Architecture &amp; Microservices</h2>
+              <p class="project-card-desc">
+                Core team development of modular asynchronous RESTful API endpoints, state synchronization, secure session management, and client-side rendering pipeline optimization.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-impact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>-25% First Contentful Paint (FCP)</span>
+              </div>
+              <span class="project-card-cta">
+                <span>Explore Technical Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Cryptographic S2S Postback Engine -->
+        <article class="project-card" data-category="backend web" data-project="s2s-attribution">
+          <div class="project-card-shade" aria-hidden="true"></div>
+          <div class="project-card-media">
+            <img src="public/assets/images/s2s-project.jpg?v=2026.3" alt="Cryptographic S2S Attribution Engine" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badges">
+              <span class="project-category-pill">Node.js &bull; HMAC-SHA256 &bull; WebSockets</span>
+              <span class="project-year-pill">2025 — 2026</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top-info">
+              <span class="project-client-name">Backend Microservice Engineering</span>
+              <h2 class="project-card-title">Cryptographic S2S Postback &amp; Attribution Engine</h2>
+              <p class="project-card-desc">
+                High-concurrency server-to-server webhook ingestion pipeline with HMAC-SHA256 cryptographic verification, idempotent deduplication, and real-time state broadcasts.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-impact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+                <span>100% Cryptographic Data Integrity</span>
+              </div>
+              <span class="project-card-cta">
+                <span>Explore Technical Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: CodeChef Algorithmic Rigor Lab -->
+        <article class="project-card" data-category="backend ai" data-project="codechef">
+          <div class="project-card-shade" aria-hidden="true"></div>
+          <div class="project-card-media">
+            <img src="public/assets/images/codechef-project.jpg?v=2026.3" alt="CodeChef Algorithmic Rigor Lab" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badges">
+              <span class="project-category-pill">DSA &bull; Python &bull; Graph Theory</span>
+              <span class="project-year-pill">2024 — 2026</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top-info">
+              <span class="project-client-name">Competitive Problem Solving &bull; NPTEL Certified</span>
+              <h2 class="project-card-title">CodeChef Algorithmic Rigor &amp; Optimal Complexity Lab</h2>
+              <p class="project-card-desc">
+                100+ algorithmic challenges solved on CodeChef focusing on asymptotic time/space optimization, dynamic programming, and graph algorithms applied to real-world routing.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-impact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>100+ Algorithmic Challenges Solved</span>
+              </div>
+              <span class="project-card-cta">
+                <span>Explore Technical Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 3: MEASURABLE IMPACT & ENGINEERING TELEMETRY
+         ==================================================== -->
+    <section class="projects-impact-section" id="impact">
+      <div class="impact-header">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>MEASURABLE ENGINEERING PERFORMANCE</span>
+        </div>
+        <h2 class="impact-title">
+          Engineering Telemetry &amp; Production Rigor.
+        </h2>
+        <p class="impact-desc">
+          Every system is architected under strict latency budgets, sub-second telemetry synchronization, and deterministic prompt constraints.
+        </p>
+      </div>
+
+      <!-- 4 Bento Metric Cards -->
+      <div class="impact-bento-grid">
+        <div class="impact-bento-card card-featured">
+          <div class="bento-card-top">
+            <span class="bento-label">Telemetry Sync</span>
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="bento-value">99.8%</div>
+            <p class="bento-detail">Sub-second sync reliability across real-time GPS streams, BLE wearable sensors, and WebSockets.</p>
+          </div>
+        </div>
+
+        <div class="impact-bento-card">
+          <div class="bento-card-top">
+            <span class="bento-label">Vision AI Latency</span>
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 12 8"></polygon>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="bento-value">&lt;1.8s</div>
+            <p class="bento-detail">Automated meal nutritional classification via OpenRouter vision models querying USDA FoodData Central.</p>
+          </div>
+        </div>
+
+        <div class="impact-bento-card">
+          <div class="bento-card-top">
+            <span class="bento-label">Frontend Optimization</span>
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="bento-value">-25%</div>
+            <p class="bento-detail">First Contentful Paint (FCP) reduction achieved across primary Mailofly dashboard views.</p>
+          </div>
+        </div>
+
+        <div class="impact-bento-card">
+          <div class="bento-card-top">
+            <span class="bento-label">Algorithmic Rigor</span>
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="bento-value">100+</div>
+            <p class="bento-detail">Algorithmic challenges solved across CodeChef focusing on optimal time and space complexity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Quote Spotlight -->
+      <div class="impact-quote-box">
+        <div class="quote-left">
+          <div class="quote-stars">★★★★★</div>
+          <blockquote class="quote-statement">
+            "Abhi engineered our core web microservices and telemetry pipelines with rock-solid resilience. His discipline across system architecture and deterministic UI prompt constraints is extraordinary."
+          </blockquote>
+          <div class="quote-author">
+            <div class="author-avatar" style="background-image: radial-gradient(circle at 30% 30%, #ff6e47, #ea580c);"></div>
+            <div>
+              <div class="author-name">Mailofly Engineering</div>
+              <div class="author-role">Core Systems Team &bull; Platform Infrastructure</div>
+            </div>
+          </div>
+        </div>
+        <div class="quote-award-badge">
+          <div class="award-title">Core Engineer</div>
+          <div class="award-org">Production Microservices</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 4: CORE ENGINEERING ARCHITECTURE PILLARS
+         ==================================================== -->
+    <section class="projects-framework-section" id="framework">
+      <div class="framework-header">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>ARCHITECTURAL PILLARS &amp; SPECIALIZATIONS</span>
+        </div>
+        <h2 class="framework-title">
+          Three Disciplined Engineering Specializations.
+        </h2>
+        <p class="impact-desc">
+          Structured system patterns applied across client-side mobile applications, multimodal AI vision, and high-throughput server microservices.
+        </p>
+      </div>
+
+      <!-- 3 Engineering Pillar Cards -->
+      <div class="framework-grid">
+        
+        <!-- Pillar 1: Mobile & Spatial Systems -->
+        <div class="sprint-tier-card">
+          <div class="sprint-card-header">
+            <span class="sprint-timeline">⚡ Pillar 01: Mobile &amp; Spatial Systems</span>
+            <h3 class="sprint-name">Flutter, Android SDK &amp; Dynamic Routing</h3>
+            <p class="sprint-desc">
+              Cross-platform mobile applications engineered for high-concurrency state synchronization, spatial polyline matching, and real-time telemetry.
+            </p>
+          </div>
+          <ul class="sprint-deliverables-list">
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Google Maps Polyline APIs &amp; Detour Radii</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Concurrent Seat Allocation State Machine &amp; Locks</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Sub-Second Driver/Passenger GPS Telemetry</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>BLE Wearables &amp; Hive Offline Caching</span>
+            </li>
+          </ul>
+          <a href="mailto:therealthakur.10@gmail.com?subject=Inquiry:%20Mobile%20Systems" class="sprint-cta-btn">
+            <span>Inquire for Mobile Systems</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 2: AI & Prompt Systems (Recommended) -->
+        <div class="sprint-tier-card tier-recommended">
+          <div class="sprint-card-badge">Core Specialization</div>
+          <div class="sprint-card-header">
+            <span class="sprint-timeline">⚡ Pillar 02: AI &amp; Vision Tooling</span>
+            <h3 class="sprint-name">Multimodal Vision &amp; Prompt Systems</h3>
+            <p class="sprint-desc">
+              Production vision pipelines and deterministic system prompt architectures that enforce anti-slop design token standards across agentic tools.
+            </p>
+          </div>
+          <ul class="sprint-deliverables-list">
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>OpenRouter Vision Models + USDA API in &lt;1.8s</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Universal UI Declarative Design Token Schemas</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Deterministic Prompt Recipes for Cursor/Claude/Copilot</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Structured JSON Generation &amp; Tool Execution</span>
+            </li>
+          </ul>
+          <a href="mailto:therealthakur.10@gmail.com?subject=Inquiry:%20AI%20Tooling" class="sprint-cta-btn">
+            <span>Inquire for AI Pipelines</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 3: Full-Stack Web & Microservices -->
+        <div class="sprint-tier-card">
+          <div class="sprint-card-header">
+            <span class="sprint-timeline">⚡ Pillar 03: Full-Stack &amp; Webhooks</span>
+            <h3 class="sprint-name">React, Node.js, Express &amp; S2S</h3>
+            <p class="sprint-desc">
+              Resilient server-to-server microservices, low-latency API contracts, and high-performance web dashboards with automated CI/CD deployment.
+            </p>
+          </div>
+          <ul class="sprint-deliverables-list">
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Modular Asynchronous RESTful API Endpoints</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>S2S Webhooks + HMAC-SHA256 Cryptographic Auth</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Idempotent Deduplication Cache &amp; Rate-Limiting</span>
+            </li>
+            <li>
+              <svg class="deliverable-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>FCP Optimization &amp; Automated GitHub CI/CD</span>
+            </li>
+          </ul>
+          <a href="mailto:therealthakur.10@gmail.com?subject=Inquiry:%20Full-Stack%20Microservices" class="sprint-cta-btn">
+            <span>Inquire for Full-Stack Builds</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 5: EDUCATION, TECHNICAL RIGOR & CREDENTIALS
+         ==================================================== -->
+    <section class="projects-education-section" id="credentials" style="max-width: 1360px; margin: 120px auto 140px auto; padding: 0 24px;">
+      <div class="education-header" style="margin-bottom: 48px;">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>ACADEMIC FOUNDATION &amp; CREDENTIALS</span>
+        </div>
+        <h2 style="font-size: clamp(2.2rem, 4vw, 3.6rem); font-weight: 800; color: #ffffff; margin-top: 16px; letter-spacing: -0.03em;">
+          Computer Science Rigor Meets Production Engineering.
+        </h2>
+        <p style="font-size: 15px; color: rgba(255, 255, 255, 0.65); max-width: 720px; line-height: 1.6; margin-top: 12px;">
+          Grounding practical system development in core computational theory, algorithmic complexity, and formalized software engineering standards.
+        </p>
+      </div>
+
+      <div class="education-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+        <!-- Degree Card -->
+        <div class="edu-card" style="background: rgba(18, 17, 24, 0.65); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 20px; padding: 32px; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 1px; color: #ff6e47; text-transform: uppercase;">ACADEMIC DEGREE</span>
+            <h3 style="font-size: 20px; font-weight: 800; color: #ffffff; margin: 12px 0 6px 0;">B.Tech in Computer Science &amp; Engineering</h3>
+            <p style="font-size: 14px; color: #38bdf8; font-weight: 600; margin-bottom: 16px;">NIMS University &bull; Jaipur, India (Expected 2026)</p>
+            <p style="font-size: 13px; color: rgba(255, 255, 255, 0.65); line-height: 1.55;">
+              <strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems (DBMS), Operating Systems, Web Technologies, Computer Networks.
+            </p>
+          </div>
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 12px; color: rgba(255,255,255,0.5);">Status: Final Year</span>
+            <span style="font-size: 12px; font-weight: 700; color: #34d399;">Jaipur, Rajasthan, India</span>
+          </div>
+        </div>
+
+        <!-- Certifications & Highlights Card -->
+        <div class="edu-card" style="background: rgba(18, 17, 24, 0.65); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 20px; padding: 32px; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 1px; color: #38bdf8; text-transform: uppercase;">CERTIFICATIONS &amp; HIGHLIGHTS</span>
+            <h3 style="font-size: 20px; font-weight: 800; color: #ffffff; margin: 12px 0 16px 0;">Algorithmic Rigor &amp; Open Source</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+              <li style="font-size: 13px; color: rgba(255, 255, 255, 0.75); line-height: 1.5; display: flex; gap: 10px;">
+                <span style="color: #ff6e47; font-weight: 800;">✦</span>
+                <span><strong>Open Source Author:</strong> Creator of <code>universal-ui-skills</code> on GitHub for AI design tokens.</span>
+              </li>
+              <li style="font-size: 13px; color: rgba(255, 255, 255, 0.75); line-height: 1.5; display: flex; gap: 10px;">
+                <span style="color: #38bdf8; font-weight: 800;">✦</span>
+                <span><strong>Competitive Programming:</strong> 100+ challenges solved on CodeChef focusing on time/space complexity.</span>
+              </li>
+              <li style="font-size: 13px; color: rgba(255, 255, 255, 0.75); line-height: 1.5; display: flex; gap: 10px;">
+                <span style="color: #34d399; font-weight: 800;">✦</span>
+                <span><strong>NPTEL Certification:</strong> Programming in Python (National Programme on Technology Enhanced Learning).</span>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; align-items: center;">
+            <a href="resume.html" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 700; color: #ff6e47; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+              <span>View Full PDF Resume</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <span style="font-size: 12px; color: rgba(255,255,255,0.5);">Direct: +91 7719768898</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         COMPREHENSIVE SOLID LUXURY GROUNDING FOOTER
+         ==================================================== -->
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-inner">
+        
+        <!-- Top Row: Brand Statement & Big Contact CTA -->
+        <div class="footer-top-row">
+          <div class="footer-brand-box">
+            <a href="index.html" class="footer-logo">Abhi Thakur</a>
+            <p class="footer-tagline">
+              Full-Stack Software Engineer &amp; AI Systems Developer building resilient mobile applications, real-time microservices, and anti-slop developer tooling.
+            </p>
+            <div class="footer-status-pill">
+              <span class="status-indicator-dot"></span>
+              <span>Available for Software Engineering Roles &amp; High-Impact Builds</span>
+            </div>
+          </div>
+
+          <!-- Big Direct Email CTA Card -->
+          <div class="footer-cta-card" id="contact">
+            <span class="footer-cta-label">Direct Engineering Inquiry</span>
+            <a href="mailto:therealthakur.10@gmail.com" class="footer-email-link">
+              <span>therealthakur.10@gmail.com</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+            <span class="footer-location">Jaipur, India &bull; Operating Globally</span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider-line"></div>
+
+        <!-- 4-Column Navigation Links Grid -->
+        <div class="footer-nav-grid">
+          <!-- Col 1 -->
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Navigation</span>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">All Projects Archive ↗</a></li>
+              <li><a href="index.html#about">Production Builds</a></li>
+              <li><a href="index.html#workflow">System Lifecycle</a></li>
+              <li><a href="index.html#palette">System Specs &amp; Telemetry</a></li>
+              <li><a href="index.html#stats">Performance Proof</a></li>
+              <li><a href="index.html#profile">Systems Architect</a></li>
+              <li><a href="index.html#scale-contact">Start a Build</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Core Stack</span>
+            <ul class="footer-links-list">
+              <li><a href="projects.html?filter=mobile">Flutter &amp; Dart</a></li>
+              <li><a href="projects.html?filter=fullstack">React &amp; Node.js</a></li>
+              <li><a href="projects.html?filter=fullstack">Firebase &amp; MongoDB</a></li>
+              <li><a href="projects.html?filter=ai">Multimodal AI &amp; Vision</a></li>
+              <li><a href="projects.html?filter=backend">S2S Postback Systems</a></li>
+              <li><a href="projects.html?filter=backend">Real-Time WebSockets</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Socials &amp; Profiles</span>
+            <ul class="footer-links-list">
+              <li><a href="https://github.com/thakur698" target="_blank" rel="noopener">GitHub (thakur698) ↗</a></li>
+              <li><a href="https://www.linkedin.com/in/abhi-thakur-40a1b0289/" target="_blank" rel="noopener">LinkedIn (abhi-thakur) ↗</a></li>
+              <li><a href="https://www.codechef.com/users/thakur698" target="_blank" rel="noopener">CodeChef ↗</a></li>
+              <li><a href="mailto:therealthakur.10@gmail.com">therealthakur.10@gmail.com ↗</a></li>
+              <li><a href="tel:+917719768898">+91 7719768898 ↗</a></li>
+              <li><a href="resume.html" target="_blank" rel="noopener">Interactive Resume (PDF) ↗</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Engineering Base</span>
+            <p class="footer-address-text">
+              Abhinandan Thakur<br>
+              Jaipur, Rajasthan, India<br>
+              NIMS University &bull; B.Tech CSE (2026)<br>
+              Core Team @ Mailofly
+            </p>
+            <div class="footer-time-badge" id="studio-time-badge">
+              <span class="clock-icon">🕒</span>
+              <span id="studio-time-text">India Standard Time (IST)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Giant Brand Signature Wordmark -->
+        <div class="footer-wordmark-wrap">
+          <span class="footer-wordmark">ABHI THAKUR</span>
+        </div>
+
+        <!-- Bottom Copyright & Legal Utility Bar -->
+        <div class="footer-bottom-utility">
+          <span class="footer-copyright-text">
+            &copy; 2026 Abhinandan Thakur. Built with deterministic systems &amp; zero slop.
+          </span>
+
+          <div class="footer-legal-links">
+            <a href="resume.html" target="_blank" rel="noopener">Resume PDF</a>
+            <span class="legal-dot">&bull;</span>
+            <a href="https://github.com/thakur698/universal-ui-skills" target="_blank" rel="noopener">Universal UI Skills</a>
+            <span class="legal-dot">&bull;</span>
+            <a href="https://github.com/thakur698" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <button class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">
+            <span>Back to top</span>
+            <div class="top-arrow-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </footer>
+
+  </div><!-- Close projects-wrapper -->
+
+  <!-- ====================================================
+       INTERACTIVE CASE STUDY PREVIEW MODAL
+       ==================================================== -->
+  <div class="case-modal-overlay" id="case-modal-overlay" role="dialog" aria-modal="true">
+    <div class="case-modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-media-header">
+        <img src="project-1.jpg" alt="Case Study Header" class="modal-header-img" id="modal-header-img">
+      </div>
+
+      <div class="modal-content-body">
+        <div class="modal-client-strip">
+          <div>
+            <span class="project-client-name" id="modal-client">Client</span>
+            <h2 class="modal-project-title" id="modal-title">Project Title</h2>
+          </div>
+          <span class="project-year-pill" id="modal-year">2025</span>
+        </div>
+
+        <div class="modal-grid-specs">
+          <div class="spec-item">
+            <span class="spec-title">Category</span>
+            <span class="spec-val" id="modal-category">Brand Identity</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-title">Timeline</span>
+            <span class="spec-val" id="modal-timeline">6 Weeks</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-title">Key Outcome</span>
+            <span class="spec-val" id="modal-metric">+145% Uplift</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="spec-title" style="margin-bottom: 8px; display: block;">Executive Overview</span>
+          <p class="modal-long-desc" id="modal-desc">
+            Project description text goes here.
+          </p>
+        </div>
+
+        <div>
+          <span class="spec-title" style="margin-bottom: 8px; display: block;">Business &amp; Market Impact</span>
+          <p class="modal-long-desc" id="modal-impact" style="color: #60a5fa;">
+            Impact description text goes here.
+          </p>
+        </div>
+
+        <div>
+          <span class="spec-title" style="margin-bottom: 12px; display: block;">Shipped Deliverables</span>
+          <div class="modal-deliverables-tags" id="modal-tags">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smooth Inertia Scroll Engine (Lenis) -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="src/js/projects.js"></script>
+  <script src="src/js/firebase-init.js"></script>
+</body>
+</html>
+
