@@ -38,9 +38,14 @@ htmlFiles.forEach((file) => {
   const srcFile = path.join(webDir, file);
   if (fs.existsSync(srcFile)) {
     fs.copyFileSync(srcFile, path.join(distDir, file));
-    // Also copy to public/ as fail-safe if Vercel targets public
     fs.copyFileSync(srcFile, path.join(publicDir, file));
-    console.log(`[build] Copied ${file} -> dist/ and public/`);
+    
+    // Also copy as extensionless file (e.g. index, projects, resume) for cleanUrls
+    const baseName = path.basename(file, '.html');
+    fs.copyFileSync(srcFile, path.join(distDir, baseName));
+    fs.copyFileSync(srcFile, path.join(publicDir, baseName));
+    fs.copyFileSync(srcFile, path.join(webDir, baseName));
+    console.log(`[build] Copied ${file} & ${baseName} -> dist/ and public/`);
   }
 });
 

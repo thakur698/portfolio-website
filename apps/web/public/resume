@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abhi Thakur - Resume Editor</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 8mm 10mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #111827;
+      line-height: 1.3;
+      font-size: 9.1pt;
+      background: #f1f5f9;
+      padding: 20px;
+    }
+    .toolbar {
+      max-width: 820px;
+      margin: 0 auto 15px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .toolbar span {
+      font-size: 9pt;
+      color: #94a3b8;
+    }
+    .print-btn {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 9pt;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .print-btn:hover {
+      background: #1d4ed8;
+    }
+    .page-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 24px 28px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      outline: none;
+    }
+    header {
+      text-align: center;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 16.5pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .contact-line {
+      font-size: 8.6pt;
+      color: #334155;
+    }
+    .contact-line a {
+      color: #0369a1;
+      text-decoration: none;
+    }
+    section {
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 3px;
+    }
+    p {
+      margin-bottom: 2.5px;
+      text-align: justify;
+    }
+    ul {
+      margin-left: 15px;
+      margin-bottom: 2.5px;
+    }
+    li {
+      margin-bottom: 1.5px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 9.1pt;
+      color: #0f172a;
+    }
+    .item-sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 8.4pt;
+      color: #475569;
+      margin-bottom: 2px;
+    }
+    .skills-row {
+      margin-bottom: 2px;
+    }
+    .skills-row strong {
+      color: #0f172a;
+    }
+
+    /* Print Setup */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .toolbar {
+        display: none !important;
+      }
+      .page-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <div>
+      <strong>Live Document Editor</strong>
+      <span>&nbsp;• Click on any text below to edit directly</span>
+    </div>
+    <button class="print-btn" onclick="window.print()">🖨️ Save as Single-Page PDF</button>
+  </div>
+
+  <div class="page-container" contenteditable="true" spellcheck="false">
+
+    <header>
+      <h1>ABHINANDAN THAKUR</h1>
+      <div class="contact-line">
+        Jaipur, Rajasthan, India | +91 7719768898 | therealthakur.10@gmail.com | 
+        <a href="https://github.com/thakur698">github.com/thakur698</a> | 
+        <a href="https://linkedin.com/in/abhi-thakur">linkedin.com/in/abhi-thakur</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Full-Stack Software Engineer and Systems Developer specializing in cross-platform mobile architecture (Flutter, Android SDK) and modern web platforms (React, Node.js). Core team engineer at Mailofly with proven expertise in engineering spatial routing algorithms, custom LLM design systems, multimodal AI vision pipelines, and secure cloud microservices (Firebase, MongoDB). Demonstrated track record in delivering high-performance, production-ready systems spanning real-time biometric telemetry, server-to-server webhook ingestion, and live GPS tracking.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-row">
+        <strong>AI & Developer Tooling:</strong> Multimodal Vision AI, LLM Prompt Architecture & System Constraints, Structured JSON Generation, Function Calling / Tool Execution, Design Tokens
+      </div>
+      <div class="skills-row">
+        <strong>Mobile Engineering:</strong> Flutter Framework, Android SDK, Provider/Riverpod State Management, Hive Local DB, Real-Time GPS Tracking, BLE & Health Sensor Sync
+      </div>
+      <div class="skills-row">
+        <strong>Web & Backend:</strong> React.js, Node.js, Express.js, RESTful Architecture, Server-to-Server (S2S) Webhooks, HMAC-SHA256 Cryptographic Verification, WebSockets, JWT Authentication
+      </div>
+      <div class="skills-row">
+        <strong>Languages & Databases:</strong> Dart, JavaScript (ES6+), Python, Java (Core), SQL, HTML5/CSS3, Firebase (Firestore, Functions, Auth, Cloud Messaging), MongoDB, Redis
+      </div>
+      <div class="skills-row">
+        <strong>DevOps & Tooling:</strong> Git, GitHub CI/CD, Postman, Android Studio, VS Code, Google Maps Platform, Stripe/Razorpay SDKs
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="item-header">
+        <span>Mailofly (mailofly.com)</span>
+        <span>Hybrid</span>
+      </div>
+      <div class="item-sub">
+        <span>Full-Stack Software Engineer — Core Team</span>
+        <span>2026 – Present</span>
+      </div>
+      <ul>
+        <li>Architect and deploy production web modules using React.js and Node.js, ensuring cross-device responsiveness and sub-second rendering performance.</li>
+        <li>Develop modular, asynchronous RESTful API endpoints handling state synchronization, secure user session management, and third-party webhook events.</li>
+        <li>Optimize client-side rendering pipelines and asset delivery, reducing First Contentful Paint (FCP) by 25% across primary dashboard views.</li>
+        <li>Collaborate directly with core engineering leads on database schema design, endpoint rate-limiting, and automated CI/CD deployment routines.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Featured Software Projects</h2>
+      
+      <div class="item-header">
+        <span>Carpool — Peer-to-Peer Mobility & Dynamic Ridesharing Platform</span>
+        <span>Flutter, Firebase, Maps SDK</span>
+      </div>
+      <div class="item-sub">
+        <span>Full-Stack Mobile Engineer (Proprietary Codebase — Live Demo / Architecture Walkthrough on Request)</span>
+        <span>2026</span>
+      </div>
+      <ul>
+        <li>Architected a mobility platform enabling drivers to publish intercity journeys and passengers to book individual seats along dynamic travel corridors.</li>
+        <li>Built a spatial route-matching engine using Google Maps Polyline APIs to match pickup/drop-off points along active routes within configurable detour radii.</li>
+        <li>Implemented a concurrent seat allocation state machine with optimistic UI updates and server-side locks to eliminate race conditions and overbooking.</li>
+        <li>Integrated real-time GPS telemetry and live route tracking, synchronizing driver location updates to passenger devices with sub-second latency.</li>
+        <li>Designed an automated fare-calculation algorithm computing dynamic per-seat pricing based on distance segments, fuel rates, and co-traveler occupancy.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 2.5px;">
+        <span>Shivra Workout — Full-Stack AI Fitness & Telehealth Ecosystem</span>
+        <span>Flutter, Firebase, OpenRouter AI, Stripe</span>
+      </div>
+      <div class="item-sub">
+        <span>Lead Software Engineer (Proprietary Codebase — Live Demo / Architecture Walkthrough on Request)</span>
+        <span>2026</span>
+      </div>
+      <ul>
+        <li>Architected an end-to-end health ecosystem integrating multimodal AI vision tracking, real-time biometric telemetry, and telehealth scheduling.</li>
+        <li>Engineered an automated meal-scanning engine using OpenRouter vision models to classify food captures, querying the USDA FoodData Central API for nutritional logging within 1.8 seconds.</li>
+        <li>Designed an Elder-Care & Physiotherapy Telehealth Hub supporting calendar scheduling, role-based practitioner portals, and encrypted real-time video consultations.</li>
+        <li>Integrated Bluetooth Low Energy (BLE) and wearable sensor telemetry to ingest live biometric data (heart rate, cadence, calories) into Cloud Firestore with local Hive offline caching.</li>
+        <li>Implemented proximity-based gym discovery via Google Maps & Places SDK, community motivation feeds, and secure Stripe payment checkouts.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 2.5px;">
+        <span>Universal UI Skills — Open-Source AI Design System Framework</span>
+        <span>LLM Prompt Engineering, Design Systems</span>
+      </div>
+      <div class="item-sub">
+        <span>Creator & Core Maintainer | <a href="https://github.com/thakur698/universal-ui-skills">github.com/thakur698/universal-ui-skills</a></span>
+        <span>2026</span>
+      </div>
+      <ul>
+        <li>Authored an open-source design constraint framework and system prompt architecture that eliminates redundant styling and visual anti-patterns in AI-generated user interfaces.</li>
+        <li>Defined declarative design token schemas, component contracts, and accessibility rules to force LLMs into producing modular, clean-code UI layouts rather than unmaintainable boilerplate.</li>
+        <li>Engineered deterministic prompt recipes for agentic coding tools (e.g., Cursor, Claude, Copilot) enforcing responsive flex/grid layouts, scalable typography scales, and strict semantic HTML/Flutter widget hierarchies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item-header">
+        <span>Bachelor of Technology (B.Tech) in Computer Science & Engineering (CSE)</span>
+        <span>Jaipur, India</span>
+      </div>
+      <div class="item-sub">
+        <span>NIMS University</span>
+        <span>Expected 2026</span>
+      </div>
+      <p style="font-size: 8.5pt; color: #475569; margin-top: 1px;">
+        <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems (DBMS), Operating Systems, Web Technologies, Computer Networks.
+      </p>
+    </section>
+
+    <section>
+      <h2>Certifications & Highlights</h2>
+      <ul>
+        <li><strong>Open Source Author:</strong> Creator of <code>universal-ui-skills</code>, providing standardized UI design prompts and token constraints for developer AI workflows.</li>
+        <li><strong>Competitive Programming:</strong> Solved 100+ algorithmic challenges on CodeChef focusing on time/space complexity optimization.</li>
+        <li><strong>NPTEL Certification:</strong> Programming in Python (National Programme on Technology Enhanced Learning).</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
