@@ -40,12 +40,7 @@ htmlFiles.forEach((file) => {
     fs.copyFileSync(srcFile, path.join(distDir, file));
     fs.copyFileSync(srcFile, path.join(publicDir, file));
     
-    // Also copy as extensionless file (e.g. index, projects, resume) for cleanUrls
-    const baseName = path.basename(file, '.html');
-    fs.copyFileSync(srcFile, path.join(distDir, baseName));
-    fs.copyFileSync(srcFile, path.join(publicDir, baseName));
-    fs.copyFileSync(srcFile, path.join(webDir, baseName));
-    console.log(`[build] Copied ${file} & ${baseName} -> dist/ and public/`);
+    console.log(`[build] Copied ${file} -> dist/ and public/`);
   }
 });
 

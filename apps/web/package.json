@@ -2,10 +2,9 @@
   "name": "@portfolio/web",
   "version": "1.0.0",
   "description": "Abhi Thakur Portfolio — High-concurrency systems, mobile architecture & deterministic AI engineering showcase",
-  "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
+    "dev": "node dev-server.js",
+    "start": "node dev-server.js",
     "build": "node build.js",
     "lint": "echo \"Linting clean: No syntax errors found\""
   },
