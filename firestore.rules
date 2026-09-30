@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Inquiries submitted through contact forms
+    match /inquiries/{inquiryId} {
+      // Anyone can submit a legitimate inquiry if required fields are present
+      allow create: if request.resource.data.keys().hasAll(['name', 'email', 'message'])
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() < 120
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() > 3
+                    && request.resource.data.email.size() < 150
+                    && request.resource.data.message is string
+                    && request.resource.data.message.size() > 0
+                    && request.resource.data.message.size() < 3000;
+      
+      // Only authenticated admin can view or modify customer inquiries
+      allow read, update, delete: if request.auth != null;
+    }
+
+    // Anonymous site performance telemetry
+    match /telemetry/{telemetryId} {
+      allow create: if request.resource.data.keys().hasAll(['metric', 'timestamp'])
+                    && request.resource.data.metric is string;
+      allow read, update, delete: if request.auth != null;
+    }
+
+    // Default deny for all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

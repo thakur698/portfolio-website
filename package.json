@@ -1,0 +1,32 @@
+{
+  "name": "abhi-thakur-portfolio-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for Abhi Thakur Portfolio — High-concurrency mobile systems, web microservices & Firebase backend",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=@portfolio/web run dev",
+    "dev:web": "npm --workspace=@portfolio/web run dev",
+    "dev:backend": "npm --workspace=@portfolio/backend run dev",
+    "build": "npm --workspace=@portfolio/web run build",
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:firestore": "firebase deploy --only firestore",
+    "emulators": "firebase emulators:start"
+  },
+  "keywords": [
+    "monorepo",
+    "portfolio",
+    "firebase",
+    "cloud-functions",
+    "firestore",
+    "flutter",
+    "react",
+    "node"
+  ],
+  "author": "Abhinandan Thakur (Abhi)",
+  "license": "MIT"
+}
