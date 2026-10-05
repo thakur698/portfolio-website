@@ -31,7 +31,7 @@ export default async function handler(req, res) {
       return res.status(500).json({ success: false, error: 'Server configuration error' });
     }
 
-    const response = await fetch('https://api.mailofly.com/v1/emails/send', {
+    const response = await fetch('https://api.mailofly.com/v1/emails', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         to: adminEmail,
-        from: 'notifications@mailofly.com',
+        from: adminEmail,
         subject: `[Portfolio Inquiry] ${subject || 'New Project Collaboration'}`,
         text: `New message received from portfolio website:\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         reply_to: email
