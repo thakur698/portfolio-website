@@ -280,8 +280,68 @@
   updateStudioClock();
   setInterval(updateStudioClock, 1000);
 
+  // ====================================================
+  // CONTACT FORM HANDLER (API INTEGRATION)
+  // ====================================================
+  function initContactForm() {
+    const contactForm = document.getElementById('contact-form');
+    if (!contactForm) return;
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('scale-name').value;
+      const email = document.getElementById('scale-email').value;
+      const building = document.getElementById('scale-building').value;
+      const timeline = document.getElementById('scale-timeline').value;
+      const stack = document.getElementById('scale-stack').value;
+      const summary = document.getElementById('scale-summary').value;
+      const submitBtn = contactForm.querySelector('.scale-submit-btn');
+
+      // Construct a unified message detailing their project context
+      const message = `
+What are we building: ${building}
+Estimated timeline: ${timeline}
+Core tech stack: ${stack}
+Project Summary: ${summary}
+      `.trim();
+
+      try {
+        if (submitBtn) submitBtn.style.opacity = '0.5';
+        
+        // Use relative URL if on same origin, or fallback to dev server port 5000
+        const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:5000/api/contact' : '/api/contact';
+        
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            email,
+            subject: 'Portfolio Project Inquiry',
+            message
+          })
+        });
+
+        const data = await response.json();
+        if (data.success) {
+          alert('Inquiry received! I will reach out shortly.');
+          contactForm.reset();
+        } else {
+          alert('Failed to send inquiry: ' + (data.error || 'Unknown error'));
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Could not send inquiry. Please ensure the backend is running or try again later.');
+      } finally {
+        if (submitBtn) submitBtn.style.opacity = '1';
+      }
+    });
+  }
+
   // Initialize
   preloadImages();
   requestAnimationFrame(loop);
   initHomeProjectsParallax();
+  initContactForm();
 })();

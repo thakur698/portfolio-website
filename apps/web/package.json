@@ -17,5 +17,8 @@
     "firebase"
   ],
   "author": "Abhinandan Thakur (Abhi)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^12.19.0"
+  }
 }
